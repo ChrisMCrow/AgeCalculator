@@ -13,8 +13,8 @@ A program that calculates your age on Mercury, Venus, Mars, and Jupiter. It also
 | :-------------     | :-------------     | :------------- | :------------- |
 | 1 | It should return users age in Mercury ☿ years.  | 30.0 | 125 |
 | 2 | should return users age in Venus ♀ years.  | 30.0 | 48 |
-| 3 | should return users age in Mars ♂ years | 30.0 | 15 |
-| 4 | should return users age in Jupiter ♃ years | 30.0 | 2 |
+| 3 | should return users age in Mars ♂ years | 30.0 | 15.9 |
+| 4 | should return users age in Jupiter ♃ years | 30.0 | 2.5 |
 | 5 | should determine how many years user has left to live in Earth years | 30.0 year old Northern American male | 47 |
 | 6 | should convert how many years user has left to live to other planets years | 30 year old Northern American male | ☿:195, ♀: 75, ♂: 25, ♃: 3 |
 | 7 | should return number of years user has lived past their life expectancy in Earth years | 87 | 10 |
