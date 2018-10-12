@@ -1,19 +1,27 @@
 //Example Code
-import { AgeCalculator } from '../src/ageCalculator.js'
+import { AgeCalculator } from '../src/ageCalculator.js';
 
 describe('AgeCalculator', function() {
-  it('should calculate a users age using their birthdate', function() {
+  let today = new Date();
+  let thirtyYearsAgo = today.setFullYear(today.getFullYear() - 30);
+  let user = new AgeCalculator(thirtyYearsAgo);
 
+  it('should calculate a users age using their birthdate', function() {
+    expect(user.age).toEqual(30);
   });
+
   it('should return users age in Mercury years', function() {
 
   });
+
   it('should return users age in Venus years', function() {
 
   });
+
   it('should return users age in Mars years', function() {
 
   });
+
   it('should return users age in Jupiter years', function() {
 
   });
@@ -29,4 +37,4 @@ describe('AgeCalculator', function() {
   it('should return number of years user has lived past their life expectancy in other planets years', function () {
 
   });
-})
+});

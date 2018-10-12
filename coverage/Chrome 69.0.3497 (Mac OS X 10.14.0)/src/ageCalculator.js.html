@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/ageCalculator.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> ageCalculator.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(e){var t={};function r(n){<span class="missing-if-branch" title="if path not taken" >I</span>if(t[n])<span class="cstat-no" title="statement not covered" >return t[n].exports;v</span>ar a=t[n]={i:n,l:!1,exports:{}};return e[n].call(a.exports,a,a.exports,r),a.l=!0,a.exports}r.m=e,r.c=t,r.d=<span class="fstat-no" title="function not covered" >function(e,t,n){<span class="cstat-no" title="statement not covered" ></span>r.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:n})}</span>,r.r=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(e,"__esModule",{value:!0})}</span>,r.n=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>var t=e&amp;&amp;e.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn r.d(t,"a",t),t}</span>,r.o=<span class="fstat-no" title="function not covered" >function(e,t){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(e,t)}</span>,r.p="/var/folders/_k/rv0388t56zb671whjd_6jc3c0000gp/T/_karma_webpack_/",r(r.s=12)}({12:function(module,exports,__webpack_require__){"use strict";eval('\n\nObject.defineProperty(exports, "__esModule", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }\n\nvar AgeCalculator = exports.AgeCalculator = function () {\n  function AgeCalculator(birthdate) {\n    _classCallCheck(this, AgeCalculator);\n\n    this.birthdate = new Date(birthdate);\n    this.exactAge = this.earthYears(this.birthdate);\n    this.age = Math.floor(this.exactAge);\n  }\n\n  _createClass(AgeCalculator, [{\n    key: "earthYears",\n    value: function earthYears(birthdate) {\n      // let today = new Date(Date.getUTCFullYear(), Date.getUTCMonth(), Date.getUTCDate())\n      var today = new Date();\n      var age = Math.abs(today - birthdate);\n      return age / 3.154e+10;\n    }\n  }, {\n    key: "mercuryYears",\n    value: function mercuryYears() {\n      return;\n    }\n  }]);\n\n  return AgeCalculator;\n}();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYWdlQ2FsY3VsYXRvci5qcz83MTYyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7SUFDRTt5QkFBWTtBQUNWOztTQUFLLFlBQVksSUFBSSxLQUNyQjtTQUFLLFdBQVcsS0FBSyxXQUFXLEtBQ2hDO1NBQUssTUFBTSxLQUFLLE1BQU0sS0FDdkI7QUFFRDs7OzsrQkFBVyxXQUNUO0FBQ0E7VUFBSSxRQUFRLElBQ1o7VUFBSSxNQUFNLEtBQUssSUFBSSxRQUNuQjthQUFPLE1BQ1I7QUFFRDs7O21DQUNFO0FBQ0Q7QUFoQndCIiwiZmlsZSI6IjEyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIEFnZUNhbGN1bGF0b3Ige1xuICBjb25zdHJ1Y3RvcihiaXJ0aGRhdGUpIHtcbiAgICB0aGlzLmJpcnRoZGF0ZSA9IG5ldyBEYXRlKGJpcnRoZGF0ZSk7XG4gICAgdGhpcy5leGFjdEFnZSA9IHRoaXMuZWFydGhZZWFycyh0aGlzLmJpcnRoZGF0ZSk7XG4gICAgdGhpcy5hZ2UgPSBNYXRoLmZsb29yKHRoaXMuZXhhY3RBZ2UpO1xuICB9XG5cbiAgZWFydGhZZWFycyhiaXJ0aGRhdGUpIHtcbiAgICAvLyBsZXQgdG9kYXkgPSBuZXcgRGF0ZShEYXRlLmdldFVUQ0Z1bGxZZWFyKCksIERhdGUuZ2V0VVRDTW9udGgoKSwgRGF0ZS5nZXRVVENEYXRlKCkpXG4gICAgbGV0IHRvZGF5ID0gbmV3IERhdGUoKTtcbiAgICBsZXQgYWdlID0gTWF0aC5hYnModG9kYXkgLSBiaXJ0aGRhdGUpO1xuICAgIHJldHVybiBhZ2UgLyAzLjE1NGUrMTA7XG4gIH1cblxuICBtZXJjdXJ5WWVhcnMoKSB7XG4gICAgcmV0dXJuXG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///12\n')}});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 12 2018 10:58:29 GMT-0700 (Pacific Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
