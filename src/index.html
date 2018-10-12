@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="bundle.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
     <title>SuperGalacticAgeCalculator</title>
   </head>
   <body>
@@ -19,9 +20,9 @@
             <div class="form-group" id="gender">
               <label for="gender">Select your gender:</label><br>
               <input type="radio" value="female" name="gender">
-              <label for="female">Female</label>
+              <label for="female">Female</label>&nbsp;
               <input type="radio" value="male" name="gender">
-              <label for="male">Male</label>
+              <label for="male">Male</label>&nbsp;
               <input type="radio" value="human" name="gender" checked>
               <label for="human">Other</label>
             </div>
@@ -41,27 +42,32 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-warning" type="submit">Submit</button>
+        <button class="btn btn-warning" type="submit">Calculate</button>
       </form>
       <hr />
       <div id="result">
         <div class="row">
           <div class="col-md-6">
-            <h2>Your age if you lived on...</h2><hr />
-            <h3>Earth: <span id="earthAge"></span></h3>
-            <h5>Mercury: <span id="mercuryAge"></span></h5>
-            <h5>Venus: <span id="venusAge"></span></h5>
-            <h5>Mars: <span id="marsAge"></span></h5>
-            <h5>Jupiter: <span id="jupiterAge"></span></h5>
+            <div id="left-result">
+              <h3>Your age if you lived on...</h3><hr />
+              <h3><i class="fas fa-globe-americas"></i> Earth: <span id="earthAge"></span></h3>
+              <h5><i class="fas fa-mercury"></i> Mercury: <span id="mercuryAge"></span></h5>
+              <h5><i class="fas fa-venus"></i> Venus: <span id="venusAge"></span></h5>
+              <h5><i class="fas fa-mars"></i> Mars: <span id="marsAge"></span></h5>
+              <h5><strong>♃</strong> Jupiter: <span id="jupiterAge"></span></h5>
+            </div>
           </div>
           <div class="col-md-6">
-            <h2>Years you have left if you lived on...</h2>
-            <p>*Based on the average life expectancy for <span id="genderInput"></span>s from <span id="originInput"></span>: <span id="lifeExpectancyInput"></span> years</p><hr />
-            <h3>Earth Years Left: <span id="earthTimeLeft"></span></h3>
-            <h5>Mercury Years Left: <span id="mercuryTimeLeft"></span></h5>
-            <h5>Venus Years Left: <span id="venusTimeLeft"></span></h5>
-            <h5>Mars Years Left: <span id="marsTimeLeft"></span></h5>
-            <h5>Jupiter Years Left: <span id="jupiterTimeLeft"></span></h5>
+            <div id="right-result">
+              <h3>Years you have left if you lived on...</h3><hr />
+              <h3><i class="fas fa-globe-americas"></i> Earth: <span id="earthTimeLeft"></span></h3>
+              <h5><i class="fas fa-mercury"></i> Mercury: <span id="mercuryTimeLeft"></span></h5>
+              <h5><i class="fas fa-venus"></i> Venus: <span id="venusTimeLeft"></span></h5>
+              <h5><i class="fas fa-mars"></i> Mars: <span id="marsTimeLeft"></span></h5>
+              <h5><strong>♃</strong> Jupiter: <span id="jupiterTimeLeft"></span></h5>
+              <hr />
+              <p>*Based on the average life expectancy for <span id="genderInput"></span>s from <span id="originInput"></span>: <span id="lifeExpectancyInput"></span> years</p>
+            </div>
         </div>
       </div>
     </div>

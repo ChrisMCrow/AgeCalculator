@@ -2,6 +2,28 @@
   display: none;
 }
 
-/* body {
-  background-image: url('spacehorizon.jpg');
-} */
+body {
+  background-image: linear-gradient(navy, black);
+  background-image: url("spacehorizon.jpeg");
+  height: 100vh;
+  color: #EFAB39;
+  text-shadow: 1px 1px 2px black;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Aclonica', sans-serif;
+  margin: 30px;
+  text-align: center;
+}
+
+#right-result, #left-result {
+  background-color: rgba(100, 100, 100, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  font-weight: normal;
+}
