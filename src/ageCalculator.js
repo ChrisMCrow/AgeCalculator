@@ -58,20 +58,20 @@ export class AgeCalculator {
 
   earthLifeExpectancy() {
     switch (this.origin) {
-      case "Northern America":
-        return this.gender === "male" ? 77 : 81;
-      case "Oceania":
-        return this.gender === "male" ? 76 : 80;
-      case "Europe":
-        return this.gender === "male" ? 75 : 82;
-      case "Latin American and the Caribbean":
-        return this.gender === "male" ? 73 : 79;
-      case "Asia":
-        return this.gender === "male" ? 71 : 74;
-      case "Africa":
-        return this.gender === "male" ? 61 : 64;
-      default:
-        return this.gender === "male" ? 70 : 74;
+    case "Northern America":
+      return this.gender === "male" ? 77 : 81;
+    case "Oceania":
+      return this.gender === "male" ? 76 : 80;
+    case "Europe":
+      return this.gender === "male" ? 75 : 82;
+    case "Latin America and the Caribbean":
+      return this.gender === "male" ? 73 : 79;
+    case "Asia":
+      return this.gender === "male" ? 71 : 74;
+    case "Africa":
+      return this.gender === "male" ? 61 : 64;
+    default:
+      return this.gender === "male" ? 70 : 74;
     }
   }
 }
