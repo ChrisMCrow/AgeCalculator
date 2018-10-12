@@ -13,6 +13,7 @@ export class AgeCalculator {
   }
 
   mercuryYears() {
-    return
+    let mercuryAge = this.exactAge / .24;
+    return Math.floor(mercuryAge);
   }
 }

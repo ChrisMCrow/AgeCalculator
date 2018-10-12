@@ -11,7 +11,7 @@ describe('AgeCalculator', function() {
   });
 
   it('should return users age in Mercury years', function() {
-
+    expect(user.mercuryYears()).toEqual(125);
   });
 
   it('should return users age in Venus years', function() {
