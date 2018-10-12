@@ -5,6 +5,44 @@
     <title>SuperGalacticAgeCalculator</title>
   </head>
   <body>
-    <p>SuperGalacticAgeCalculator</p>
+    <div class="container">
+      <h1>Super Galactic Age Calculator</h1>
+      <form action="">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="birthdate">Enter your birthdate:</label>
+              <input type="date" class="form-control" name="birthdate" id="birthdate">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group" id="gender">
+              <label for="gender">Select your gender:</label><br>
+              <input type="radio" value="male" name="gender">
+              <label for="female">Female</label>
+              <input type="radio" value="male" name="gender">
+              <label for="male">Male</label>
+              <input type="radio" value="other" name="gender">
+              <label for="other" checked>Other</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="origin">Select your region of origin:</label>
+              <select id="origin">
+                <option value="Not Selected" selected>--Select Option--</option>
+                <option value="Northern American">Northern American</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Europe">Europe</option>
+                <option value="Latin American and the Caribbean">Latin American and the Caribbean</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
